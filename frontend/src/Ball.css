@@ -1,0 +1,69 @@
+/* Set up the background for the game area */
+.game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0; 
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end; 
+    cursor: pointer; 
+}
+  
+/* Style the ball */
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff; 
+    border-radius: 50%; 
+    position: absolute;
+    bottom: 0; 
+    transition: transform 0.3s ease; 
+}
+  
+/* Define the jump animation */
+.ball.jump {
+    animation: jump 0.5s ease forwards;
+}
+  
+@keyframes jump {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-100px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+}
+  
+/* Style for obstacles */
+.obstacle {
+    width: 60px;
+    height: 20px;
+    background-color: #ff5722; 
+    position: absolute;
+    border-radius: 5px; 
+}
+
+/* Style for the save button */
+.save-button {
+    position: absolute;
+    bottom: 20px; 
+    right: 20px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover {
+    background-color: #0056b3; 
+}
+

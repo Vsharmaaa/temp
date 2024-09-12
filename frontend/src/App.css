@@ -1,0 +1,225 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px; /* Reduced padding */
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+.nav-link {
+    margin: 0 15px; /* Reduced margin */
+    text-decoration: none;
+    color: #333;
+    font-size: 16px; /* Reduced font size */
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Landing page styles */
+.landing-page {
+    padding: 70px 15px 15px; /* Reduced top padding */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Reduced margin */
+}
+
+.landing-title {
+    font-size: 36px; /* Reduced font size */
+    margin-bottom: 8px; /* Reduced margin */
+    color: #333;
+}
+
+.landing-subtitle {
+    font-size: 16px; /* Reduced font size */
+    color: #555;
+}
+
+.header-image img {
+    max-width: 60%; /* Adjusted to smaller width */
+    height: auto;
+    border-radius: 5px; /* Slightly reduced border radius */
+}
+
+/* Featured Games Section */
+.featured-games {
+    text-align: center;
+    margin-bottom: 40px; /* Increased margin for spacing */
+}
+
+.featured-games h2 {
+    font-size: 32px; /* Larger font size for emphasis */
+    margin-bottom: 20px; /* Spacing below the heading */
+    color: #333;
+    font-weight: 600; /* Semi-bold font weight */
+}
+
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between boxes */
+    justify-content: center;
+}
+
+.game-box {
+    background: #ffffff; /* White background for clean look */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Larger shadow for modern depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    text-align: center;
+    width: 300px; /* Wider box for better presentation */
+    padding: 20px; /* Padding inside the box */
+    position: relative;
+    overflow: hidden; /* Ensure rounded corners are visible */
+    border: 1px solid #e1e1e1; /* Light border for definition */
+    background-color: #f9f9f9; /* Slightly off-white background for subtle contrast */
+}
+
+.game-box:hover {
+    transform: translateY(-8px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.game-icon {
+    font-size: 40px; /* Larger icon for modern look */
+    color: #007bff; /* Bright color for emphasis */
+    margin-bottom: 15px; /* Spacing below the icon */
+}
+
+.game-thumbnail {
+    margin-bottom: 15px; /* Spacing below the image */
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for the image */
+    border: 2px solid #e1e1e1; /* Light border for definition */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+.game-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.game-title {
+    font-size: 20px; /* Adjusted font size for modern typography */
+    color: #333;
+    margin: 0;
+    font-weight: 500; /* Medium font weight */
+    line-height: 1.4; /* Improved readability */
+}
+
+.game-description {
+    font-size: 14px; /* Smaller font size for description */
+    color: #666; /* Lighter color for description */
+    margin-top: 10px; /* Space above the description */
+}
+
+/* About Us Page Styles */
+.about-page {
+    padding: 70px 15px 15px; /* Adjust top padding as needed */
+}
+
+.about-content {
+    text-align: center; /* Center align all text */
+    max-width: 800px; /* Optional: Limit the width for better readability */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.about-content h2 {
+    font-size: 28px; /* Adjust font size */
+    margin-bottom: 15px; /* Space below each heading */
+    color: #333; /* Heading color */
+}
+
+.about-content p {
+    font-size: 16px; /* Adjust font size */
+    color: #555; /* Paragraph color */
+    line-height: 1.6; /* Improve readability */
+}
+
+.about-content a {
+    color: #007bff; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.about-content a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Newsletter Section */
+.newsletter {
+    text-align: center;
+    margin-bottom: 30px; /* Reduced margin */
+}
+
+.newsletter h2 {
+    font-size: 28px; /* Reduced font size */
+    margin-bottom: 15px; /* Reduced margin */
+    color: #333;
+}
+
+.newsletter p {
+    font-size: 16px; /* Reduced font size */
+    color: #555;
+}
+
+.newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 5px; /* Reduced gap */
+}
+
+.newsletter-form input {
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.newsletter-form button {
+    padding: 8px 15px; /* Reduced padding */
+    font-size: 14px; /* Reduced font size */
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .landing-title {
+        font-size: 28px; /* Further reduced font size for small screens */
+    }
+
+    .game-box {
+        width: 200px; /* Further reduced width */
+    }
+
+    .game-title {
+        font-size: 16px; /* Further reduced font size */
+    }
+}
